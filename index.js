@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
-const yourAPIKey = "736705aafe83b089779178bf15cb7b90";
+const yourAPIKey = process.env.API_KEY;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
